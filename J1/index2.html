@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension</title>
+</head>
+<body>
+    <script>
+
+      const age = prompt("Input your age");
+      const retirement = 57;// среднее  арефметическое от  женского и мужского пенсионного возвраста , т.к. мы еще не проходили конструкции ветвлений
+
+      const yearRemaining = retirement - age;
+    
+      alert("Pension through " + yearRemaining + " years")
+
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+
+      console.log("currentYear - " + currentYear)
+
+      const retirementYear = currentYear + yearRemaining;
+
+      alert("You will retire at " + retirementYear + " year")
+    </script>
+</body>
+</html>
