@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прибыль</title>
+</head>
+<body>
+  <script>
+    let month1 = +prompt("Input the amount for one month - ");
+    let month2 = +prompt("Input the amount for the second month - ");
+    let month3 = +prompt("Input the amount for the third month - ");
+    alert(`Profit ${month1 + month2 + month3} `+` Average profit per month ${(month1 + month2 + month3)/3}`)
+    console.log(Math.max(month1,month2,month3));
+    console.log(Math.min(month1,month2,month3));
+  </script>
+</body>
+</html>
