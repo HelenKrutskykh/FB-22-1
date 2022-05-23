@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky ticket</title>
+</head>
+<body>
+<script>
+
+const ticketNumber= +prompt('Введите номер билета');
+let sum1=ticketNumber/1000;
+let sum2=ticketNumber%1000;
+let firstSum=Math.floor(sum1/100+sum1/10%10+ sum1%10);
+let secondSum=Math.floor(sum2/100+sum2/10%10+ sum2%10);
+
+ if(firstSum == secondSum) {
+    alert('Поздравляем  , Ваш билет счастливый!');
+}else{
+    alert('К сожалению , Ваш билет обычный!');
+}
+
+
+</script>
+</body>
+</html>
