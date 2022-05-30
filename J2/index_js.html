@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework</title>
+</head>
+<body>
+  <script>
+    //1.Объём цилиндра
+    // let heght = prompt("Input cylinder height : ");
+    // let diametr = prompt ("Input diameter : ");
+    // let radius = diametr/2;
+    // alert(`The volume of the cylinder is ${Math.PI * radius**2 * heght}`)
+
+    //2.Средняя прибыль
+    // let month1 = +prompt("Input the amount for one month - ");
+    // let month2 = +prompt("Input the amount for the second month - ");
+    // let month3 = +prompt("Input the amount for the third month - ");
+    // alert(`Average profit per month ${(month1 + month2 + month3)/3}`)
+
+   // 3.Аббревиатура
+    //  let surname = prompt("Input last name ");
+    //  let name = prompt("Input name ");
+    //  let patronymic = prompt("Input patronymic ");
+    //  let abbr = abbreviation (surname, name, patronymic);
+    // alert(abbr)
+
+    // function abbreviation(surname, name, patronymic) 
+    // {
+    // return surname.charAt() + "." + name.charAt() + "." + patronymic.charAt()
+    // }
+
+    //4.Приветствие
+    // const name = prompt("Введите имя ");
+    // alert(`Привет, ${name}!`)
+
+    //5.Периметр квадрата
+    // let length = prompt("Input the length of the side of the square");
+    // alert(`The perimeter of the square = ${length * 4}`)
+
+    //6.Скорость
+    // let distance = prompt("Input distance ");
+    // let time = prompt("Input time ");
+    // alert(`You must drive at speed ${distance/time} км/ч`)
+
+    //7.Наоборот
+    let number = prompt("Input a three-digit number - ");
+    let first= Math.floor(number / 100);
+    let second = Math.floor(number % 100 / 10);
+    let third = number % 10;
+    alert("" + third + second + first)
+  </script>
+</body>
+</html>
