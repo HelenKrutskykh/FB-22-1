@@ -108,7 +108,7 @@
     <main>
       <article>
         <!-- insert iframe from youtube -->
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" 
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/ojcNcvb1olg" 
         title="YouTube video player" 
         frameborder="0"
         allow="accelerometer; 
@@ -117,7 +117,7 @@
         encrypted-media; 
         gyroscope; 
         picture-in-picture" 
-        allowfullscreen>
+        allowfullscreen >
         </iframe>
 
         </iframe>
@@ -134,24 +134,27 @@
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img srcset="images/firefox_logo-only_RGB-120.png 120w,
                        images/firefox_logo-only_RGB-400.png  400w"
-               sizes="(max-width: 480px) 120w,400w"
+               sizes="(max-width: 480px) 120px,
+                      400px"
                src="images/firefox_logo-only_RGB-400.png" alt="Firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
           <img srcset="images/mozilla-dinosaur-head-120.png 120w,
                        images/mozilla-dinosaur-head-400.png  400w"
-               sizes="(max-width: 480px) 120w,400w"
+               sizes="(max-width: 480px) 120px,
+                      400px"
                src="images/mozilla-dinosaur-head-400.png" alt="Mozilla dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
           <img srcset="images/firefox-addons-120.png 120w,
                        images/firefox-addons-400.png 400w"
-               sizes="(max-width: 480px) 120w,400w"
+               sizes="(max-width: 480px) 120px,
+                      400px"
                src="images/firefox-addons-400.png" alt="Firefox addons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img
-               src="images/mdn.svg" alt="Developer mozilla">
+               src="images/mdn.svg" alt="Developer mozilla(MDN)">
         </a>
         <div class="clearfix"></div>
       </div>
@@ -159,9 +162,8 @@
       <div class="red-panda">
         <!-- insert picture element -->
         <picture>
-          <source media=" (max-width: 599px) " srcset="images/red-panda-600.png">
-          <source media=" (min-width: 600px) " srcset="images/red-panda-1200.jpg">
-          <img src="images/red-panda-1200.jpg">
+          <source srcset="images/red-panda-1200.jpg" media="(min-width: 600px)" >
+          <img src="images/red-panda-600.png.jpg" alt="Red panda"> 
         </picture>
       </div>
 
