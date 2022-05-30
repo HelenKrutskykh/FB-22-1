@@ -1,0 +1,32 @@
+<!-- 1. Однакові цифри в діапазоні
+Створіть веб-програму, в якій користувач вводить два числа (межі діапазону) від 10 до 99. 
+Потрібно знайти і вивести в консоль через кому всі числа в діапазоні, які мають хоч дві однакові цифри. -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identical numbers in the range</title>
+</head>
+<body>
+  <script>
+let number1 = prompt('Введіть число-початок, від 10 до 99', "");
+let number2 = prompt('Введіть число-кінець, від 10 до 99', "");
+
+
+for (i = number1; i <= number2; i++) 
+{    
+  firstNum = Math.floor ((i / 10) % 10);
+  secondNum = Math.floor (i % 10);
+
+        if (firstNum == secondNum) {
+        answer = firstNum + `${secondNum}`;
+
+        console.log(answer);
+    } 
+}
+ 
+  </script>
+</body>
+</html>

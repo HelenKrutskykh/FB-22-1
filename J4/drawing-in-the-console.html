@@ -1,0 +1,31 @@
+<!-- 2. Малювання у консолі
+
+Створіть веб-програму, в якій користувач вводить ширину та символ. 
+Вивести в консоль лінію заданої ширини заданим символом -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing in the console</title>
+</head>
+<body>
+  <script>
+let length = +prompt('Введіть ширину', "");
+let symbol = prompt('Введіть символ', "");
+
+// let answer = symbol.repeat(length);    //Метод repeat() конструирует и возвращает новую строку,
+// //  содержащую указанное количество соединённых вместе копий строки, на которой он был вызван.
+
+// console.log(answer);
+
+let drawing = '';
+    for (let i=0; i<length; i++) {
+      drawing += `${symbol}`;
+    }
+
+console.log(drawing);
+  </script>
+</body>
+</html>
