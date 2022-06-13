@@ -12,7 +12,7 @@ const chek = [
     {product: "Яблоки", quantity: 5, price: 2.5}
 ]
 
-console.log(printCheck(chek));
+alert(printCheck(chek));
 alert(sumCheck(chek));
 alert(maxPrice(chek));
 alert(average(chek));
@@ -28,7 +28,7 @@ function printCheck(chek){
         str += " Ціна: " + (chek[i].price * chek[i].quantity);
 
     }
-   window.alert(str);
+    return str;
 }
 
 // * Підрахунок загальної суми покупки
