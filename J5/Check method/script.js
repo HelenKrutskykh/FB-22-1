@@ -46,8 +46,8 @@ function maxPrice(chek){
 
     let max = 0;
     for (let i = 0; i < chek.length; i++) {
-        if (max < chek[i].price){
-            max = chek[i].price;
+        if (max < chek[i].quantity * chek[i].price){
+            max = chek[i].quantity * chek[i].price;
         }
     }
     return max;
