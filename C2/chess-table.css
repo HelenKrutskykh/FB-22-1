@@ -1,0 +1,344 @@
+td{
+  width: 65px;
+  height: 65px;
+  border: 1px solid rgb(39, 22, 16);;
+  background-color: rgb(58, 34, 25);
+}
+
+.odd td:nth-child(2n + 1){
+  background-color: rgb(241, 234, 201);
+}
+.even td:nth-child(2n){
+  background-color: rgb(241, 234, 201);
+}
+
+.king{
+  height: 18px;
+  width: 10px;
+  margin: auto;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom-width: 30px;
+  border-bottom-style: solid;
+}
+
+.black.king{
+  border-bottom-color: black;
+}
+
+.white.king{
+  border-bottom-color: white;
+}
+
+.king::before{
+  content: '♔';
+  font-size: 40px;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  top: -20px;
+  left: -7px;
+}
+
+.black.king::before{
+  color: black;
+}
+
+.white.king::before{
+  color: white;
+}
+
+.king::after{
+  content: ' ';
+  width: 25px;
+  height: 7px;
+  display: block;
+  position: relative;
+  top: -35px;
+  left: -7px;
+  border-radius: 12px;
+}
+
+.black.king::after{
+  background-color: black;
+}
+
+.white.king::after{
+  background-color: white;
+} 
+
+.queen{
+  height: 17px;
+  width: 10px;
+  margin: auto;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom-width: 30px;
+  border-bottom-style: solid;
+}
+
+.black.queen{
+  border-bottom-color: black;
+}
+
+.white.queen{
+  border-bottom-color: white;
+}
+
+.queen::before{
+  content: '♛';
+  font-size: 40px;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  top: -20px;
+  left: -7px;
+}
+
+.black.queen::before{
+  color: black;
+}
+
+.white.queen::before{
+  color: white;
+}
+
+.queen::after{
+  content: ' ';
+  width: 23px;
+  height: 7px;
+  display: block;
+  position: relative;
+  top: -35px;
+  left: -6px;
+  border-radius: 12px;
+}
+
+.black.queen::after{
+  background-color: black;
+}
+
+.white.queen::after{
+  background-color: white;
+} 
+
+.elephant{
+  height: 15px;
+  width: 7px;
+  margin: auto;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom-width: 24px;
+  border-bottom-style: solid;
+}
+
+.blac.elephant{
+  border-bottom-color: black;
+}
+
+.white.elephant{
+  border-bottom-color: white;
+}
+
+.elephant::before{
+  content: '♝';
+  font-size: 40px;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  top: -20px;
+  left: -8px;
+}
+
+.black.elephant::before{
+  color: black;
+}
+
+.white.elephant::before{
+  color: white;
+}
+
+.elephant::after{
+  content: ' ';
+  width: 18px;
+  height: 6px;
+  display: block;
+  position: relative;
+  top: -35px;
+  left: -5px;
+  border-radius: 12px;
+}
+
+.black.elephant::after{
+  background-color: black;
+}
+
+.white.elephant::after{
+  background-color: white;
+} 
+
+.horse{ 
+  height: 15px;
+  width: 7px;
+  margin: auto;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom-width: 23px;
+  border-bottom-style: solid;
+}
+
+.black.horse{
+  border-bottom-color: black;
+}
+
+.white.horse{
+  border-bottom-color: white;
+}
+
+.horse::before{
+  content: '♞';
+  font-size: 30px;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  top: -14px;
+  left: -6px;
+}
+
+.black.horse::before{
+  color: black;
+}
+
+.white.horse::before{
+  color: white;
+}
+
+.horse::after{
+  content: ' ';
+  width: 18px;
+  height: 6px;
+  display: block;
+  position: relative;
+  top: -22px;
+  left: -5px;
+  border-radius: 12px;
+}
+
+.black.horse::after{
+  background-color: black;
+}
+
+.white.horse::after{
+  background-color: white;
+} 
+
+.castle{ 
+  height: 12px;
+  width: 6px;
+  margin: auto;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom-width: 23px;
+  border-bottom-style: solid;
+}
+
+.black.castle{
+  border-bottom-color: black;
+}
+
+.white.castle{
+  border-bottom-color: white;
+}
+
+.castle::before{
+  content: '♜';
+  font-size: 26px;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  top: -9px;
+  left: -5px;
+}
+
+.black.castle::before{
+  color: black;
+}
+
+.white.castle::before{
+  color: white;
+}
+
+.castle::after{
+  content: ' ';
+  width: 17px;
+  height: 5px;
+  display: block;
+  position: relative;
+  top: -20px;
+  left: -5px;
+  border-radius: 12px;
+}
+
+.black.castle::after{
+  background-color: black;
+}
+
+.white.castle::after{
+  background-color: white;
+} 
+
+
+.pawn{
+  width: 4px;
+  height: 7px;
+  margin: auto;
+  border-bottom: 20px solid;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+
+.black.pawn{
+  border-bottom-color: black;
+}
+
+.white.pawn{
+  border-bottom-color: white;
+}
+
+.pawn::before{
+  content: ' ';
+  width: 12px; 
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  top: -5px;
+  left: -4px;
+}
+
+.black.pawn::before{
+  background-color: black;
+}
+
+.white.pawn::before{
+  background-color: white;
+}
+
+.pawn::after{
+  content: ' ';
+  width: 18px;
+  height: 6px;
+  display: block;
+  position: relative;
+  top: -6px;
+  left: -7px;
+  border-radius: 12px;
+}
+
+.black.pawn::after{
+  background-color: black;
+}
+
+.white.pawn::after{
+  background-color: white;
+}
