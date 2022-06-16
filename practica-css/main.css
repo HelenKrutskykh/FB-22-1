@@ -1,0 +1,19 @@
+.body{
+  background-color: rgb(63, 63, 63);
+  margin: 110px 0px 0px 0px;
+}
+
+.line-through{
+font-family: 'Unna', serif;
+color: white;
+font-size: 90px;
+text-align: center;
+text-decoration: line-through 3px;
+}
+
+.now{
+font-family: 'Unna', serif;
+color: white;
+font-size: 200px;
+text-align: center;
+}
