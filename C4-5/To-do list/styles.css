@@ -1,0 +1,61 @@
+.toDolist{
+	width: 500px;
+	font-family: system-ui;
+	display: inline-block;
+}
+
+.title{
+	text-align: center;
+	font-size: 30px;
+}
+
+.toDolist label{
+	padding-left: 35px;
+	padding-right: 70px;
+	padding-top: 5px;
+	height: 35px;
+	width: 400px;
+	font-size: 18px;
+	list-style: none;
+	cursor: pointer;
+	display: block;
+}
+
+.toDolist input{
+	display: none;
+}
+
+.toDolist label:nth-of-type(odd){
+	background-color: #b1a6da;
+}
+.toDolist label:nth-of-type(even){
+	background-color: #f8f3ab;
+}
+
+.toDolist label::before {
+	content:'check_box_outline_blank';
+	font-family: 'Material Symbols Outlined';
+	position: relative;
+    top: 3px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.toDolist label::after {
+	content:'close';
+	font-family: 'Material Symbols Outlined';
+	display: inline-block;
+	color: rgb(243, 55, 55);
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.toDolist input:checked+label::before {
+	content:'select_check_box';
+	text-decoration-line:none;
+}
+
+.toDolist input:checked+label{
+	text-decoration-line: line-through;
+	background-color: #d3d3d3;
+}
