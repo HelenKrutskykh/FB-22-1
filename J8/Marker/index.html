@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marker</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <section>
+    <h4>
+      Реалізувати клас, що описує простий маркет.
+      В класі мають бути такі компоненти:
+    </h4>
+    <ul>
+      <li>поле, що зберагіє колір</li>
+      <li>поле, що зберігає кількість чорнил</li>
+      <li>
+        метод друку (метод приймає рядок і виводить текст відповідним кольором;
+        текст виводиться до тих пір, поки в маркері є чорнило;
+        один не пробіловий символ – це 0,5% чорнила в маркері).
+      </li>
+    </ul>
+    <label> Введіть текст для друку: <input type="text" id="print_text_marker"
+    /></label>
+    <button
+      onclick="printText(marker, 'print_text_marker', 'marker1_text_print');">
+      Надрукувати текст
+    </button>
+    <p>
+      Друкований текст  синім маркером:
+      <span id="marker1_text_print"></span>
+    </p>
+</body>
+</html>
