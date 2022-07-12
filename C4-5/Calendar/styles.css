@@ -62,12 +62,6 @@ caption li {
 	font-size: 10px;
 	list-style: none;
 	font-family: system-ui, monospace;
-	width: 10ch;
-    overflow: hidden;
-		/* hidden - контент обрезается, без предоставления прокрутки. */
-    white-space: nowrap; 
-		/* nowrap - объединяет последовательности пробелов в один пробел, как значение normal,
-		но не переносит строки (оборачивание текста) внутри текста.  */
 }
 
 caption li:hover,  caption li.active{
