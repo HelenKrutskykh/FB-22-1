@@ -1,0 +1,68 @@
+/*justify-content: space-between; - Равномерно распределяет все элементы по ширине flex-блока.*/
+/*flex-direction: column; - Направление, в котором блоки будут располагаться вертикально */
+
+body{
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*flex - это сокращённое свойство, определяющее способность гибкого элемента растягиваться 
+или сжиматься для заполнения собой доступного свободного пространства. */
+
+div, header, footer, aside, main, body {
+	display: flex;	
+}
+
+header, footer {
+	background-color: #fdead9;
+	height: 100px;
+}
+
+aside{
+	background-color: #b8dee7;
+	width: 200px;
+}
+
+/* align-items: stretch; - Растянуть предметы, чтобы соответствовать */
+
+main {
+	flex: 1;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.row {
+	flex:1;
+	justify-content: space-between;
+}
+
+.col {
+	flex: 1;
+	flex-direction: column;
+}
+
+.one {
+	background-color: #dce6f1;
+}
+
+.two{
+  flex:2;
+	background-color: #ebf1de;
+}
+
+.three{
+  flex:1;
+	background-color: #daeef3;
+}
+
+.four{
+	background-color: #f9bf8f
+}
+
+.five {
+	flex: 0.5;
+	background-color: #bfbfbf;
+}
