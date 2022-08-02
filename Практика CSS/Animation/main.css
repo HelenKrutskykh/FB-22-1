@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 225px;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  background: conic-gradient(#fff, #999);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle::before{
+  content: ' ';
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: white;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg);
+  }
+  100% { 
+    transform: rotate(360deg); }
+}
