@@ -18,7 +18,7 @@ function time() {
   document.querySelector(".hr").innerText = hr;
   document.querySelector(".ss").innerText = ss;
 
-  setTimeout(time, "1000");
+  setInterval(time, "1000");
 }
 
 time();
