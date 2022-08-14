@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="calculator_wrapper">
 
+    <div> <p id="box" class="box">0</p> </div>
+
+      <div class="grid-container">
+            
+        <div> <button onclick="calculate_percentage()">%</button> </div>
+        <div> <button onclick="clear_entry()">CE</button> </div>
+        <div> <button onclick="button_clear()">C</button> </div>
+        <div> <button id="backspace_btn" onclick="backspace_remove()"></button> </div>
+
+        <div> <button onclick="division_one()">¹∕ₓ</button> </div>
+        <div> <button onclick="power_of()">𝑥²</button> </div>
+        <div> <button onclick="square_root()">√𝑥</button> </div>
+        <div> <button id="divOp"  value="/" onclick="button_number('/')">÷</button> </div>
+
+        <div> <button class="darker" onclick="button_number(7)">7</button> </div>
+        <div> <button class="darker" onclick="button_number(8)">8</button> </div>
+        <div> <button class="darker" onclick="button_number(9)">9</button> </div>
+        <div> <button  id="multiOp" value="*" onclick="button_number('*')">×</button> </div>
+
+        <div> <button class="darker" onclick="button_number(4)">4</button> </div>
+        <div> <button class="darker" onclick="button_number(5)">5</button> </div>
+        <div> <button class="darker" onclick="button_number(6)">6</button> </div>
+        <div> <button  id="subOp" value="-"  onclick="button_number('-')">-</button> </div>
+
+        <div> <button class="darker" onclick="button_number(1)">1</button> </div>
+        <div> <button class="darker" onclick="button_number(2)">2</button> </div>
+        <div> <button class="darker" onclick="button_number(3)">3</button> </div>  
+        <div> <button id="plusOp" value="+" onclick="button_number('+')">+</button> </div>
+
+        <div> <button class="darker" onclick="plus_minus()">±</button> </div>
+        <div> <button class="darker" onclick="button_number(0)">0</button></div>
+        <div> <button class="darker" id="dot" value="." onclick="button_number('.')">.</button> </div>
+        <div> <button class="operator" id="equal_sign" value="=" onclick="button_number('=')">=</button> </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
