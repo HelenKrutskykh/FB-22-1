@@ -13,7 +13,6 @@ background-color: black;
 .memory-card {
 width: calc(15% - 15px);
 height: calc(25% - 15px);
-position: relative;
 transform: scale(1);
 transform-style: preserve-3d;
 transition: transform .5s;
