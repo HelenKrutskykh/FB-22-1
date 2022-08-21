@@ -1,0 +1,36 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+display: grid;
+grid-template: repeat(2, 200px) 300vh 100px / 25% 50% 25%;
+}
+
+header {
+background-color: rgb(234,209,220);
+grid-column: span 3;
+}
+
+.menu-left{
+background-color: rgb(208,224,227);
+}
+
+.menu-right {
+background-color: rgb(201,218,248);
+}
+
+main {
+background-color: rgb(255, 242, 204);
+grid-row: span 2;
+}
+
+.left-content, .right-content {
+background-color: rgb(252, 229, 205);
+grid-row: span 2;
+}
+
+footer {
+background-color: rgb(217,210,233);
+}
