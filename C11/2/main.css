@@ -1,0 +1,27 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+display: grid;
+grid-template: 200px calc(400px + 400px) / 10% 800px 1fr;
+}
+
+.menu {
+background-color: rgb(234,209,220);
+grid-row: span 2;
+}
+
+.menu-right {
+background-color: rgb(207, 226, 243);
+}
+
+main {
+background-color: rgb(255, 242, 204);
+grid-row: span 2;
+}
+
+.right-content {
+background-color: rgb(252, 229, 205);
+}
