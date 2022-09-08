@@ -70,7 +70,7 @@ function mathOperation() {
   } else if (lastOperation === '/') {
     result = parseFloat(result) / parseFloat(dis2Num);
   }else if( lastOperation === '%'){
-    result = parseFloat(result) /100 || parseFloat(dis2Num)/100;
+    result = parseFloat(result) % parseFloat(dis2Num);
   }
 }
 
