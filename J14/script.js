@@ -70,7 +70,7 @@ function mathOperation() {
   } else if (lastOperation === '/') {
     result = parseFloat(result) / parseFloat(dis2Num);
   }else if( lastOperation === '%'){
-    result = parseFloat(result) % parseFloat(dis2Num);
+    result = parseFloat(dis2Num)/100 * parseFloat(result) ;
   }
 }
 
@@ -102,6 +102,7 @@ clearLastEl.addEventListener('click', () => {
 
 // Ввод данных с клавиатуры - поиск по ключам.
 window.addEventListener('keydown', (e)=>{
+  console.log(e.key)
   if(
     e.key === '0' ||
     e.key === '1' || 
@@ -132,6 +133,29 @@ window.addEventListener('keydown', (e)=>{
   } 
   else if( e.key == "Enter" || e.key === '='){
     clickEqual();
+  }
+  // console.log(e.key)
+
+  else if( e.key == "Backspace"){
+    if(e.metaKey){
+    dis1Num = '';
+    dis2Num = '';
+    display1El.innerText ='';
+    display2El.innerText ='';
+    result = '';}
+    else{
+      display2El.innerText = '';
+      dis2Num= '';
+    }
+    // console.log(e)
+  }
+
+  else if( e.key == "Delete"){
+    dis1Num = '';
+    dis2Num = '';
+    display1El.innerText ='';
+    display2El.innerText ='';
+    result = '';
   }
   // console.log(e.key)
 })
