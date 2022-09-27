@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="main.css">
+  
+</head>
+<body>
+    <div class="header">
+      <h1>TIC TAC TOE</h1>
+    </div>
+
+    <div class="box">
+
+
+<!-- Атрибут readonly (HTML тега <input>) є логічним атрибутом, який вказує,
+що поле введення доступно тільки для читання.
+
+Коли до елементу <input> додається атрибут readonly, текстове поле не можна 
+змінюватися користувачем, в тому числі записувати новий текст або модифікувати існуючий. -->
+
+      <div class="row">
+        <input class="btn" type="text" readonly>
+        <input class="btn" type="text" readonly>
+        <input class="btn" type="text" readonly>
+      </div>
+
+      <div class="row">
+        <input class="btn" type="text" readonly>
+        <input class="btn" type="text" readonly>
+        <input class="btn" type="text" readonly>
+      </div>
+
+      <div class="row">
+        <input class="btn" type="text" readonly>
+        <input class="btn" type="text" readonly>
+        <input class="btn" type="text" readonly>
+      </div>
+
+    </div>
+
+    <p class="result">PLAYER X TURN</p>
+
+    <div class="reset">
+      <button id="reset">RESET</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
 
