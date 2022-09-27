@@ -23,7 +23,7 @@ const ticTacToe = (element, index) => {
     cells[index] = currentPlayer;
     currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
     result.innerHTML = `PLAYER ${currentPlayer} TURN`;
-
+    let isFree = false;
     for (let i = 0; i < conditions.length; i++) {
         let condition = conditions[i];
         let a = cells[condition[0]];
@@ -31,13 +31,19 @@ const ticTacToe = (element, index) => {
         let c = cells[condition[2]];
 
         if (a == '' || b == '' || c == '') {
+            isFree = true;
             continue;
         }
 
         if ((a == b) && (b == c)) {
             result.innerHTML = `HOORAY ! PLAYER ${a} WON ! `;
             btns.forEach((btn) => btn.disabled = true);
+            return 'finish';
         }
+    }
+    if(!isFree){
+        result.innerHTML = `HOORAY ! TIE `;
+        btns.forEach((btn) => btn.disabled = true);   
     }
 };
 
