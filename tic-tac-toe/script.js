@@ -24,6 +24,7 @@ const ticTacToe = (element, index) => {
     currentPlayer = currentPlayer == 'X' ? 'O' : 'X';
     result.innerHTML = `PLAYER ${currentPlayer} TURN`;
     let isFree = false;
+    
     for (let i = 0; i < conditions.length; i++) {
         let condition = conditions[i];
         let a = cells[condition[0]];
@@ -42,7 +43,7 @@ const ticTacToe = (element, index) => {
         }
     }
     if(!isFree){
-        result.innerHTML = `HOORAY ! TIE `;
+        result.innerHTML = `DEAD HEAT`;
         btns.forEach((btn) => btn.disabled = true);   
     }
 };
