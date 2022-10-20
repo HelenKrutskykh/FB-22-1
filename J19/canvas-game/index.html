@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Game</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="myfilter"></div>
+<div  class="restart" id="myrestartbutton">
+  <button onclick="restartGame()">RESTART</button>
+</div>
+<div class="canvas_game" id="canvascontainer"></div>
+<br>
+<div class="move">
+  <button ontouchstart="moveup()" onmousedown="moveup()" onmouseup="clearmove()">UP</button><br><br>
+  <button ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button>
+  <button ontouchstart="moveright()" onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button><br><br>
+  <button ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+</div>
+<br>
+  <script src="script.js"></script>
+</body>
+</html>
