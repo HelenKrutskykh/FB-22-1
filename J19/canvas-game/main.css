@@ -14,8 +14,8 @@
 
 .restart{
   position: absolute;
-  padding-top: 155px;
-  padding-left: 355px;
+  padding-top: 165px;
+  padding-left: 555px;
   font-size: 30px;
   display: none;
 }
@@ -29,7 +29,7 @@
 
 .move{
   text-align: center;
-  width: 800px;
+  width: 1100px;
 }
 
 button{
