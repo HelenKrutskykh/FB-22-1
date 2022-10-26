@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Montserrat";
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.card{
+width: 400px;
+height: 650px;
+text-align: center;
+margin: 15px;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-rounded-image {
+width: 200px;
+height: 200px;
+border-radius: 100%;
+margin-top: 10px;
+border: 4px solid white;
+}
+
+h2{
+font-size: 35px;
+margin-bottom: 20px;
+}
+
+p{
+font-weight: bold;
+text-transform: uppercase;
+margin: 5px;
+}
+
+.info{
+background: rgba(255, 255, 255, 0.140);
+border-radius: 16px;
+}
+
+button{
+width: 200px;
+height: 50px;
+font-family: "Montserrat";
+border-radius: 16px;
+background-color: white;
+border: 4px solid white ;
+margin-top: 15px;
+}
+
+button:hover{
+background: none;
+}
