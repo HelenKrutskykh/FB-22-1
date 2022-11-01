@@ -1,4 +1,4 @@
-const canvas = document.getElementById('canvas1');
+const canvas = document.querySelector('#canvas1');
 const cxt = canvas.getContext('2d');
 const particleArray = [];
 let hue = 0;
@@ -14,6 +14,7 @@ const mouse = {
   x: undefined,
   y: undefined,
 }
+
 canvas.addEventListener('click', function(event){
   mouse.x = event.x;
   mouse.y = event.y;
@@ -23,6 +24,8 @@ canvas.addEventListener('click', function(event){
 });
 
 canvas.addEventListener('mousemove', function(event){
+  if(mouse.x === event.x && mouse.y === event.y) return;
+  
   mouse.x = event.x;
   mouse.y = event.y;
   for (let i = 0; i < 10; i++){
