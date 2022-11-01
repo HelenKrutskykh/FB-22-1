@@ -4,35 +4,35 @@ const getNewUserInfo = () => {
       .then(data => displayUserInfo(data))
 }
 
+const user = {
+  photo: document.getElementById("displayUserPhoto").src,
+  name: document.getElementById("displayUserName").innerText,
+  fullname: document.getElementById("displayUserFullName").innerText,
+  email: document.getElementById("displayUserEmail").innerText,
+  num: document.getElementById("displayUserPhoneNumber").innerText,
+  gen: document.getElementById("displayUserGander").innerText,
+  dob: document.getElementById("displayUserDOB").innerText,
+  adr: document.getElementById("displayUserAddress").innerText,
+  
+}
 
 const displayUserInfo = (data) => {
   
   const userInfo = data.results[0];
 
-  document.getElementById("displayUserPhoto").src = userInfo.picture.large;
-
-  const userName = `${userInfo.name.first} ${userInfo.name.last}`;
-  document.getElementById("displayUserName").innerText = userName;
-
-  const userFullName = `${userInfo.name.title}. ${userInfo.name.first} ${userInfo.name.last}`;
-  document.getElementById("displayUserFullName").innerText = userFullName;
-
-  const userEmailAddress = userInfo.email;
-  document.getElementById("displayUserEmail").innerText = userEmailAddress;
-
-  const userPhoneNumber = userInfo.phone;
-  document.getElementById("displayUserPhoneNumber").innerText = userPhoneNumber;
-
-  const userGender = userInfo.gender;
-  document.getElementById("displayUserGander").innerText = userGender;
+  user.photo = userInfo.picture.large;
+  user.name = `${userInfo.name.first} ${userInfo.name.last}`;
+  user.fullname = `${userInfo.name.title}. ${user.name}`;
+  user.email = userInfo.email;
+  user.num = userInfo.phone;
+  user.gen = userInfo.gender;
 
   let userDOB = new Date(userInfo.dob.date);
   userDOB = `${userDOB.getDate()}/${userDOB.getMonth() + 1}/${userDOB.getFullYear()} (${userInfo.dob.age} years old)`
-  document.getElementById("displayUserDOB").innerText = userDOB;
+  user.dob = userDOB;
 
-  const userAddress = `Street: ${userInfo.location.street.number} ${userInfo.location.street.name}, City: ${userInfo.location.city}, State: ${userInfo.location.state}, ${userInfo.location.country}.`;
-  document.getElementById("displayUserAddress").innerText = userAddress;
+  const location = userInfo.location
+  user.adr = `Street: ${location.street.number} ${location.street.name}, City: ${location.city}, State: ${location.state}, ${location.country}.`;
 }
-
 
 getNewUserInfo();
