@@ -75,7 +75,6 @@ function nasarequested(){
   
   const dateInput = document.querySelector("#datepicker");
   dateInput.addEventListener('change',(e)=>{
-      e.preventDefault();
       nasarequested();
   })
   
